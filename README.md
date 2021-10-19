@@ -43,6 +43,7 @@ Module compatible with Terraform `0.12`
 | suffix | A suffix for the resource names, this helps create multiple instances of this stack for different environments | `string` | `""` | no |
 | tags | Tags to apply | `map` | <pre>{<br>  "Name": "es-cleanup"<br>}</pre> | no |
 | timeout | Maximum lambda execution time | `number` | `300` | no |
+| delete_cw_logs_after | Numbers of days to preserve Cloudwatch logs | `number` | `30` | no |
 
 ## Outputs
 
