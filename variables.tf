@@ -45,6 +45,12 @@ variable "delete_after" {
   type        = number
 }
 
+variable "delete_cw_logs_after" {
+  description = "Numbers of days to preserve Cloudwatch logs"
+  default     = 30
+  type        = number
+}
+
 variable "index_format" {
   description = "Combined with 'index' varible is used to evaluate the index age"
   default     = "%Y.%m.%d"
